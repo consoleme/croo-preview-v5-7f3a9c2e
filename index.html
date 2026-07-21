@@ -111,7 +111,7 @@
     .usage-ring-svg .ring-arc { fill: none; stroke-width: 2.7; stroke-linecap: round; transition: stroke-dasharray .3s; }
     .usage-ring-overlay { position: absolute; inset: 0; display: grid; place-items: center; color: var(--soft); font: 900 10px/1 var(--mono); }
 
-    .hero-stage { position: relative; z-index: 1; min-height: 620px; }
+    .hero-stage { position: relative; z-index: 1; min-height: 680px; }
     .screen { overflow: hidden; border: 1px solid rgba(180,192,207,.25); border-radius: 8px; background: #0b0f14; box-shadow: 0 30px 90px rgba(0,0,0,.46); }
     .hero-screen { position: absolute; inset: 0 0 60px 0; }
     .hero-screen img { width: 100%; height: 100%; object-fit: cover; object-position: left center; filter: saturate(1.03) contrast(1.02); }
@@ -323,7 +323,7 @@
     .hero-sub { max-width: 50ch; }
     .terminal span::after { content: ""; display: inline-block; width: 8px; height: 15px; margin-left: 9px; vertical-align: -2px; background: var(--blue); animation: crooBlink 1.1s step-end infinite; }
     .hero-stage { isolation: isolate; }
-    .hero-screen { top: 44px; border-color: rgba(88,166,255,.34); box-shadow: 0 38px 100px rgba(0,0,0,.55), 0 0 0 1px rgba(88,166,255,.08); }
+    .hero-screen { top: 226px; border-color: rgba(88,166,255,.34); box-shadow: 0 38px 100px rgba(0,0,0,.55), 0 0 0 1px rgba(88,166,255,.08); }
     .agent-flow {
       position: absolute;
       z-index: 4;
@@ -337,26 +337,28 @@
       background: rgba(10,14,20,.88);
       box-shadow: 0 24px 70px rgba(0,0,0,.5);
       backdrop-filter: blur(18px);
+      overflow: hidden;
     }
     .agent-flow-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; font: 800 12px/1.2 var(--mono); color: #8fc5ff; text-transform: uppercase; letter-spacing: .08em; }
     .agent-flow-head .discuss-svg { width: 25px; height: 25px; color: var(--blue); flex: 0 0 auto; }
     .agent-flow-head span:first-child { display: inline-flex; align-items: center; gap: 9px; }
     .agent-flow-head span:last-child { display: inline-flex; align-items: center; gap: 7px; color: #d9ebff; }
     .agent-flow-head span:last-child::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 16px rgba(88,166,255,.9); }
-    .agent-line { position: relative; height: 76px; }
+    .agent-line { position: relative; height: 86px; }
     .agent-line::before { content: ""; position: absolute; left: 10%; right: 10%; top: 27px; height: 1px; background: linear-gradient(90deg, transparent, rgba(88,166,255,.54), transparent); }
     .agent-dot { position: absolute; top: 24px; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 14px rgba(88,166,255,.9); }
     .agent-dot.one { animation: crooTravelA 3.8s ease-in-out infinite; }
     .agent-dot.two { background: var(--cyan); animation: crooTravelB 3.8s ease-in-out infinite; }
-    .agent-node { position: absolute; top: 0; display: grid; justify-items: center; gap: 8px; width: 118px; transform: translateX(-50%); color: #b6c3d1; font: 800 10px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+    .agent-node { position: absolute; top: 0; display: grid; justify-items: center; gap: 12px; width: 118px; transform: translateX(-50%); color: #b6c3d1; font: 800 10px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
     .agent-node:nth-of-type(1) { left: 9%; }
     .agent-node:nth-of-type(2) { left: 50%; }
     .agent-node:nth-of-type(3) { left: 91%; }
-    .agent-node .agent-ring { position: relative; display: grid; place-items: center; width: 48px; height: 48px; color: var(--blue); }
+    .agent-node .agent-ring { position: relative; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; overflow: hidden; color: var(--blue); }
     .agent-node .agent-ring svg { width: 34px; height: 34px; overflow: visible; }
     .agent-node .ring-bg { fill: none; stroke: rgba(180,192,207,.23); stroke-width: 2.4; }
     .agent-node .ring-band { fill: none; stroke-width: 2.9; stroke-linecap: round; transform-box: fill-box; transform-origin: center; }
     .agent-node .ring-core { transform-origin: center; transform-box: fill-box; animation: ring-core-dialog 1.2s ease-in-out infinite; animation-delay: var(--sync-delay, 0s); }
+    .agent-node > span:last-child { position: relative; z-index: 2; max-width: 112px; text-align: center; }
     .agent-node .agent-ring::before,
     .agent-node .agent-ring::after { content: ""; position: absolute; left: 50%; top: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; border: 1.5px solid var(--dialog, #4cc9ff); opacity: 0; pointer-events: none; animation: dialog-ripple 1.6s ease-out infinite; animation-delay: var(--sync-delay, 0s); }
     .agent-node .agent-ring::after { animation-delay: calc(var(--sync-delay, 0s) + .8s); }
@@ -370,7 +372,7 @@
     @media (max-width: 1020px) {
       h1 { font-size: 64px; }
       .agent-flow { position: relative; left: auto; top: auto; transform: none; width: 100%; margin-bottom: 14px; }
-      .hero-screen { top: 126px; }
+      .hero-screen { top: 220px; }
     }
     @media (max-width: 620px) {
       h1 { font-size: 48px; }
@@ -380,7 +382,7 @@
       .agent-node { width: 86px; font-size: 9px; }
       .agent-node b { width: 38px; height: 38px; }
       .agent-feed { font-size: 11px; }
-      .hero-screen { top: 166px; }
+      .hero-screen { top: 248px; }
     }
   </style>
 </head>
