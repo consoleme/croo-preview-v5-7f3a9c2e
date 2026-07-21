@@ -1,0 +1,26 @@
+<svg width="700" height="256" viewBox="0 0 700 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- croo horizontal logo: Redesign v3 -->
+  <!-- "C" (Orbital Mark) and "roo" both slightly larger to fill the frame. -->
+  <!-- Spacing balanced for a more cohesive horizontal lockup. -->
+  <!-- All in signature blue #58A6FF -->
+  
+  <!-- Orbital 'C' mark (The Hero - v3: 0.55 scale, 64 stroke) -->
+  <g transform="translate(16, 4) scale(0.55)">
+    <path d="M400 256C400 335.531 335.531 400 256 400C176.469 400 112 335.531 112 256C112 176.469 176.469 112 256 112C300.324 112 339.814 132.198 365.928 164" stroke="#58A6FF" stroke-width="64" stroke-linecap="round"/>
+    <circle cx="256" cy="256" r="40" fill="#58A6FF"/>
+    <circle cx="400" cy="256" r="24" fill="#58A6FF"/>
+    <circle cx="112" cy="256" r="24" fill="#58A6FF"/>
+    <circle cx="256" cy="112" r="24" fill="#58A6FF"/>
+    <circle cx="256" cy="400" r="24" fill="#58A6FF"/>
+  </g>
+  
+  <!-- "roo" Typography (v3: 0.95 scale, 20 stroke for better balance) -->
+  <g transform="translate(300, 124) scale(0.95)" stroke="#58A6FF" stroke-width="20" stroke-linecap="round">
+    <!-- 'r' -->
+    <path d="M0 0V80M0 30C0 13 15 0 35 0H50"/>
+    <!-- 'o' #1 -->
+    <circle cx="120" cy="40" r="40"/>
+    <!-- 'o' #2 -->
+    <circle cx="230" cy="40" r="40"/>
+  </g>
+</svg>
